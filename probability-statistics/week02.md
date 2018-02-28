@@ -35,14 +35,26 @@ Bayes' theorem :
 $$P(B_j | A) = \frac{P(A |B_j)P(B_j)}{\sum\limits_{i=1}^{n} P(A | B_i)P(B_i)}$$
 
 #### Prediction decomposition
-$$P(A_1 \cap A_2) = P(A_2 | A_1)P(A_1)$$
-$$P(A_1 \cap A_2 \cap A_3) = P(A_3 | A_2 \cap A_1)P(A_2 | A_1)P(A_1)$$
-$$...$$
+$$
+\begin{align}
+P(A_1 \cap A_2) &= P(A_2 | A_1)P(A_1) \\
+P(A_1 \cap A_2 \cap A_3) &= P(A_3 | A_2 \cap A_1)P(A_2 | A_1)P(A_1) \\
+&\vdots \\
+P(A_1 \cap \dots \cap A_n) &= P(A_1) \prod\limits_{i=2}^n P(A_i | A_1 \cap \dots \cap A_n)
+\end{align}$$
 
 ### Independence
 
-Intuitively, "$A$ and $B$ are independent" if (and only if) knowing the result of $A$ does not provide any additional information on $B$ (and vice versa).
+Intuitively, "$A$ and $B$ are independent" if knowing the result of $A$ does not provide any additional information on $B$ (and vice versa).
 
-This can be written as :
+By definition, two events $A$ and $B$ are independent if and only if :
 
 $$P(A \cap B) = P(A)P(B)$$
+
+Independence is a property of events.
+
+For some events  $A_1, A_2, ..., A_n$, there are different types of independence :
+
+- (Mutual) independence
+- Pairwise independence
+- Conditional independence given some other event $B$
