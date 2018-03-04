@@ -40,7 +40,7 @@ $$
 P(A_1 \cap A_2) &= P(A_2 | A_1)P(A_1) \\
 P(A_1 \cap A_2 \cap A_3) &= P(A_3 | A_2 \cap A_1)P(A_2 | A_1)P(A_1) \\
 &\vdots \\
-P(A_1 \cap \dots \cap A_n) &= P(A_1) \prod\limits_{i=2}^n P(A_i | A_1 \cap \dots \cap A_n)
+P(A_1 \cap \dots \cap A_n) &= P(A_1) \prod\limits_{i=2}^n P(A_i | A_1 \cap \dots \cap A_{i-1})
 \end{align}$$
 
 ### Independence
