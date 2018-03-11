@@ -21,6 +21,16 @@ Une transformation linéaire satisfait les propriétés suivantes :
 
 Pour effectuer une transformation en **coordonnées homogènes** dans un espace à $n$ dimensions il faut une matrice de transformation $(n + 1) \times (n + 1)$.
 
+$$
+\begin{bmatrix}
+    x \\ y \\ z \\ 1
+\end{bmatrix}
+\sim
+\begin{bmatrix}
+    sx \\ sy \\ sz \\ s
+\end{bmatrix}
+$$
+
 #### Scaling
 
 $$
